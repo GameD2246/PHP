@@ -27,18 +27,18 @@
 //echo "Aluno $conceito";
 
 
-$voto = "tiririca";
-$resposta = "";
-
-switch ($voto) {
-    case "tiririca":
-        $resposta = "TIRIRICA";
-    case "chico tripa":
-        $resposta = "CHICO TRIPA";
-    case "ze lezim":
-        $resposta = "ZÉ LEZIM";
-    default:
-        $resposta = "NULO";
-}
-
-echo "Você votou $resposta";
+//$voto = "tiririca";
+//$resposta = "";
+//
+//switch ($voto) {
+//    case "tiririca":
+//        $resposta = "TIRIRICA";
+//    case "chico tripa":
+//        $resposta = "CHICO TRIPA";
+//    case "ze lezim":
+//        $resposta = "ZÉ LEZIM";
+//    default:
+//        $resposta = "NULO";
+//}
+//
+//echo "Você votou $resposta";

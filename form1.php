@@ -1,4 +1,4 @@
-<?php
+<?php //
 $a = 0;
 $b = 0;
 if(isset($_POST["valor1"]) && isset($_POST["valor2"])){

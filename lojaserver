@@ -1,0 +1,29 @@
+create database if not exists loja;
+
+use loja;
+
+
+create table if not exists categorias(
+	id int auto_increment primary key,
+	nome varchar(255)
+);
+
+insert into categorias
+(nome) values
+('Vestuários'),
+('Padaria'),
+('Eletrônicos'),
+('Cama, Mesa e Banho');
+
+create table if not exists produtos(
+	id int auto_increment primary key,
+	nome varchar(255),
+    descricao text,
+    preco decimal(10,2),
+    categoria_id int references categorias(id)
+    
+);
+
+insert into produtos (nome, descricao, preco, categoria_id) values 
+('Camisa Pólo', 'Uma Camisa legal', 50.0, 1 ),
+('Fogão Inox', 'Um fogão barato', 300.0, 3categoriascategorias);

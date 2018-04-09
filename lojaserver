@@ -27,3 +27,26 @@ create table if not exists produtos(
 insert into produtos (nome, descricao, preco, categoria_id) values 
 ('Camisa Pólo', 'Uma Camisa legal', 50.0, 1 ),
 ('Fogão Inox', 'Um fogão barato', 300.0, 3categoriascategorias);
+
+
+
+use loja;
+
+create table if not exists usuarios(
+	id int auto_increment primary key,
+    nome varchar(255),
+    login varchar(255),
+    senha varchar(255),
+    tipo varchar(255)
+);
+
+
+insert into usuarios 
+(nome,login,senha, tipo) values 
+('Wskley Bezerra', 'weskleymb', 'senac', 'produtos'),
+('Yago Silva', 'mrfelikss', '12345', 'categorias');
+
+use loja;
+
+alter table produtos 
+add column foto_produto varchar(255);
